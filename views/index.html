@@ -48,15 +48,15 @@
             <p>Please register the crops. Please enter the quantity, item name, and area.</p>
 
                 <label>quantity:
-                    <input type="text" id="pronumber" name="pronumber" value="10" placeholder="1 many..">
+                    <input type="text" id="pronumber" name="pronumber"  placeholder="How many..">
                 </label>
                 <br>
                 <label>item name:
-                    <input type="text" id="proname" name="proname" value="감귤" placeholder="What is ..">
+                    <input type="text" id="proname" name="proname"  placeholder="What is ..">
                 </label>
                 <br>
                 <label>area:
-                    <input type="text" id="proloc" name="proloc" value="제주" placeholder="Where is ..">
+                    <input type="text" id="proloc" name="proloc"  placeholder="Where is ..">
                 </label>
                 <br>
                 <label>submit:
@@ -82,8 +82,10 @@
         <section id="viewVerifyDocument">
             <h1>Verify a Document</h1>
             <p>Blockchain users can verify documents by checking whether they exist in the "Document Registry" smart contract on the Ethereum blockchain decentralized network.</p>
-            <!-- <input type="file" id="documentToVerify" /><br/> -->
-            <input type="button" id="documentVerifyButton" value="Submit" />
+            <li>
+                Contract <b>address</b> (at Ropsten testnet):
+                <a href="#" id="contractLink" target="_blank"></a>
+            </li>
         </section>
     </main>
     
