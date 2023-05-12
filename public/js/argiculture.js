@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 	
     $('#contractLink').text(productRegistryContractAddress);
-    $('#contractLink').attr('href', 'https://ropsten.etherscan.io/address/' + productRegistryContractAddress);
+    $('#contractLink').attr('href', 'https://sepolia.infura.io/address/' + productRegistryContractAddress);
 	    
     // Attach AJAX "loading" event listener
     $(document).on({

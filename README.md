@@ -1,2 +1,2 @@
 # nodeRopstenMetamskArgicultureRegister
-nodeRopstenMetamskArgicultureRegister
+ArgicultureRegister
