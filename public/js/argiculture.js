@@ -162,7 +162,7 @@ $(document).ready(function() {
     $('#contractLink').text(productRegistryContractAddress);
     $('#contractLink').attr('href', 'https://sepolia.etherscan.io/address/' + productRegistryContractAddress);
 	    
-    // Attach AJAX "loading" event listener
+     Attach AJAX "loading" event listener
     $(document).on({
         ajaxStart: function() { $("#loadingBox").show() },
         ajaxStop: function() { $("#loadingBox").hide() }    
@@ -187,8 +187,8 @@ $(document).ready(function() {
     }
 
 	async function showTable() {
-        // $('#viewSubmitDocument>table').html( );
-        // $('#viewSubmitDocument').show();
+        $('#viewSubmitDocument>table').html( );
+        $('#viewSubmitDocument').show();
 
 		if (window.ethereum)
 			try {
@@ -212,7 +212,7 @@ $(document).ready(function() {
 				return showError("Smart contract call failed: " + err);
 			
 				
-			// showInfo(`Document ${result} <b>successfully added</b> to the registry.`);
+			showInfo(`Document ${result} <b>successfully added</b> to the registry.`);
 			console.log("length: " + result);
 
 			for (let i = 0; i < result; i++) {
@@ -222,23 +222,23 @@ $(document).ready(function() {
 					console.log("product: " + product);
 
 					let toString = product.toString();
-					// console.log("product: " + toString);
+					 console.log("product: " + toString);
 					let strArray = toString.split(",");
 
 					let timestamp = new Date(strArray[3]*1000);
 					console.log("timestamp: " + timestamp);
 					console.log("timestamp: " + strArray[3]*1000);
 
-					// let row = table.insertRow();
-					// let cell1 = row.insertCell(0);
-					// let cell2 = row.insertCell(1);
-					// let cell3 = row.insertCell(2);
-					// let cell4 = row.insertCell(3);
-					// cell1.innerHTML = strArray[0];
-					// cell2.innerHTML = strArray[1];
-					// cell3.innerHTML = strArray[2];
-					// cell4.style.width ="60%";
-					// cell4.innerHTML = timestamp;
+					 let row = table.insertRow();
+					 let cell1 = row.insertCell(0);
+					 let cell2 = row.insertCell(1);
+					 let cell3 = row.insertCell(2);
+					 let cell4 = row.insertCell(3);
+					 cell1.innerHTML = strArray[0];
+					 cell2.innerHTML = strArray[1];
+					 cell3.innerHTML = strArray[2];
+					 cell4.style.width ="60%";
+					 cell4.innerHTML = timestamp;
 
 					$('#myTable').append( '<tr><td>' + strArray[0] + ", "+ strArray[1] + ", "+ strArray[2] + ", "+ timestamp  + '</td></tr>' );
 
