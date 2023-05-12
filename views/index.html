@@ -12,6 +12,17 @@
     <script src="js/argiculture.js"></script>
 </head>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#myTable').hide(); // 페이지 로드시 "myTable"을 숨깁니다.
+
+        $('#showTableButton').click(function() {
+            $('#myTable').show(); // "showTableButton"이 클릭되었을 때 "myTable"을 표시합니다.
+        });
+    });
+</script>
+
+
 <body>
     <header id="menu">
         <a href="#" id="linkHome">Home</a>
